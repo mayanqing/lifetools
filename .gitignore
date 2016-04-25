@@ -26,7 +26,6 @@ proguard/
 # Log Files
 *.log
 
-# Added by Psyche at 2015.11.3 15:39
 .idea/
 *.iml
 gradle.properties
