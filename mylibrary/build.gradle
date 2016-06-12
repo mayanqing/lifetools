@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply from: 'https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: '../mvn-push/gradle-mvn-push.gradle'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -12,6 +12,7 @@ android {
     }
     buildTypes {
         release {
+//            tasks.findByPath(":mylibrary:androidJavadocs").enabled = false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
